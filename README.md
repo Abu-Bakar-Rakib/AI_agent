@@ -27,6 +27,11 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 
+Run the App:
+Start the Streamlit app:
+streamlit run main.py
+Open the link in your browser (usually http://localhost:8501).
+
 
 ## 🔑 Usage
 
