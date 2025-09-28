@@ -1,22 +1,15 @@
 import streamlit as st
 from langchain_groq import ChatGroq
-
-# Set up the Streamlit app
 st.set_page_config(page_title="AI Agent", page_icon="🤖")
-st.title("🤖 AI Agent - Powered by LLaMA 3.1 (Groq)")
-
-# Ask for API key (better security than hardcoding)
+st.title("🤖 AI Agent-Powered by LLaMA 3.1(Groq)")
 api_key = st.text_input("Enter your Groq API Key:", type="password")
-
 if api_key:
     llm = ChatGroq(model="llama-3.1-8b-instant", api_key=api_key)
-
-    # Chat input from user
     user_input = st.text_area("💬 Ask me anything Rakib Vai:")
 
     if st.button("Generate Response"):
         if user_input.strip():
-            with st.spinner("Thinking..."):
+            with st.spinner("Cooking...."):
                 response = llm.invoke(user_input)
                 st.success(response.content)
         else:
@@ -30,3 +23,4 @@ else:
 # response = llm.invoke("what is the meaning of life?")
 
 # print(response)
+
