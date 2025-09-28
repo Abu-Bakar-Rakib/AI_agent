@@ -12,7 +12,7 @@ if api_key:
     llm = ChatGroq(model="llama-3.1-8b-instant", api_key=api_key)
 
     # Chat input from user
-    user_input = st.text_area("💬 Ask me anything:")
+    user_input = st.text_area("💬 Ask me anything Rakib Vai:")
 
     if st.button("Generate Response"):
         if user_input.strip():
@@ -28,4 +28,5 @@ else:
 # llm = ChatOpenAI(model = "gpt-4o-mini",api_key="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")
 # # llm2 = ChatAnthropic(model= "claude-3-5-sonnet-20241022")
 # response = llm.invoke("what is the meaning of life?")
+
 # print(response)
