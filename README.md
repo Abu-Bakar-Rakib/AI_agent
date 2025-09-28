@@ -26,6 +26,7 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+pip install streamlit
 
 Run the App:
 Start the Streamlit app:
